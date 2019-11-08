@@ -1,0 +1,47 @@
+.header {
+  height: 70px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+
+  @media screen and (max-width: 800px) {
+    height: 60px;
+    padding: 10px;
+    margin-bottom: 5px;
+  }
+
+  .logoContainer {
+    height: 100%;
+    width: 70px;
+    padding: 25px 25px 25px 0;
+
+    @media screen and (max-width: 800px) {
+      padding: 0px;
+      width: 60px;
+    }
+  }
+
+  .options {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 17px;
+
+    @media screen and (max-width: 800px) {
+      width: 75%;
+    }
+
+    .option {
+      padding: 10px 15px;
+      transition: color 0.4s ease;
+      cursor: pointer;
+
+      &:hover {
+        color: rgb(218, 63, 36);
+      }
+    }
+  }
+}

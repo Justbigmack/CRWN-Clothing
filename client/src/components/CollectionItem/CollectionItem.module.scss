@@ -1,0 +1,104 @@
+.collectionItem {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  height: 350px;
+  align-items: center;
+  position: relative;
+
+  &:hover {
+    cursor: pointer;
+
+    .image {
+      opacity: 0.8;
+    }
+
+    .collectionItemButton {
+      visibility: visible;
+      opacity: 0.85;
+    }
+
+    @media screen and (max-width: 800px) {
+      .image {
+        opacity: unset;
+      }
+
+      .collectionItemButton {
+        visibility: unset;
+        opacity: unset;
+      }
+    }
+  }
+
+  .image {
+    width: 100%;
+    height: 95%;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 5px;
+    transition: all 0.2s ease;
+  }
+
+  .collectionItemButton {
+    position: absolute;
+    top: 255px;
+    padding: 0 35px 0 35px;
+    width: 80%;
+    min-width: 165px;
+    height: 50px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.2s ease;
+    letter-spacing: 0.5px;
+    line-height: 50px;
+    font-size: 15px;
+    background-color: white;
+    color: black;
+    text-transform: uppercase;
+    font-family: 'Open Sans Condensed';
+    font-weight: bolder;
+    border: none;
+    cursor: pointer;
+    border: 1px solid black;
+    transition: 0.25s all ease;
+    display: flex;
+    justify-content: center;
+
+    &:hover {
+      background-color: black;
+      color: white;
+    }
+
+    @media screen and (max-width: 1024px) {
+      display: block;
+      visibility: visible;
+      opacity: 0.85;
+
+      &:focus {
+        outline: none;
+      }
+
+      &:hover {
+        background-color: white;
+        color: black;
+      }
+    }
+  }
+
+  .collectionFooter {
+    width: 100%;
+    height: 5%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+
+    .name {
+      width: 90%;
+      margin-bottom: 15px;
+    }
+
+    .price {
+      width: 10%;
+    }
+  }
+}

@@ -1,0 +1,51 @@
+.checkoutTable {
+  width: 75%;
+  margin: 50px auto;
+
+  @media screen and (max-width: 1024px) {
+    width: 100%;
+    margin: 25px auto;
+    font-size: 20px;
+  }
+
+  .tableHeader {
+    tr {
+      font-size: 24px;
+
+      .tableHeaderRowCell {
+        text-transform: capitalize;
+        width: 20%;
+        border-bottom: 1px solid darkgrey;
+      }
+
+      @media screen and (max-width: 750px) {
+        font-size: 16px;
+      }
+    }
+  }
+
+  tbody {
+    .tableRowTotal {
+      width: 100%;
+      text-align: right;
+      td {
+        font-size: 36px;
+        @media screen and (max-width: 800px) {
+          font-size: 26px;
+        }
+      }
+    }
+
+    .tableRowWarning {
+      width: 100%;
+      text-align: center;
+      font-size: 24px;
+      color: rgb(218, 63, 36);
+
+      @media screen and (max-width: 1024px) {
+        font-size: 20px;
+        padding: 10px 0;
+      }
+    }
+  }
+}

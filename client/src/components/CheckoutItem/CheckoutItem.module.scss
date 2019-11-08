@@ -1,0 +1,49 @@
+.checkoutItemRow {
+  width: 100%;
+  font-size: 20px;
+  border-bottom: 1px solid darkgrey;
+
+  .checkoutItemRowCell {
+    text-align: center;
+    padding: 5px 0;
+    border-bottom: 1px solid darkgrey;
+
+    @media screen and (max-width: 800px) {
+      padding: 2px 0;
+    }
+
+    .checkoutItemImage {
+      width: 100%;
+    }
+
+    .quantity {
+      display: flex;
+      justify-content: center;
+
+      .arrow {
+        margin: 0 10px;
+        cursor: pointer;
+
+        &:hover {
+          color: rgb(218, 63, 36);
+
+          @media screen and (max-width: 800px) {
+            color: unset;
+          }
+        }
+      }
+    }
+
+    .removeButton {
+      cursor: pointer;
+
+      &:hover {
+        color: rgb(218, 63, 36);
+
+        @media screen and (max-width: 800px) {
+          color: unset;
+        }
+      }
+    }
+  }
+}

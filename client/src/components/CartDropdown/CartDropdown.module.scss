@@ -1,0 +1,34 @@
+.cartDropdown {
+  position: absolute;
+  width: 240px;
+  height: 340px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border: 1px solid black;
+  background-color: white;
+  top: 80px;
+  right: calc((100vw - 1630px) / 2);
+  z-index: 5;
+
+  @media screen and (max-width: 1750px) {
+    right: 60px;
+  }
+
+  .emptyMessage {
+    font-size: 18px;
+    margin: 50px auto;
+  }
+
+  .cartItems {
+    height: 240px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  button {
+    margin-top: auto;
+  }
+}
