@@ -1,6 +1,6 @@
 # CRWN Clothing
 
-Welcome to CRWN Clothing. CRWN Clothing is an e-commerce Progressice Web Application that allows users to purchase clothes easily.
+Welcome to CRWN Clothing. CRWN Clothing is an e-commerce Progressive Web Application that allows users to purchase clothes easily.
 
 ## Demo
 
